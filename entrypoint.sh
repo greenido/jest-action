@@ -2,6 +2,7 @@
 
 # Exit if any subcommand fails
 set -e 
+cd ido-green/tests/
 
 # Setup node modules if needed
 if [ -e node_modules/.bin/jest ]; then
@@ -16,6 +17,6 @@ else
 fi
 
 
-echo "## Running Jest"
+echo "## Running Jest 😃"
 args=$@
 sh -c "$setup ./node_modules/.bin/jest $args"
